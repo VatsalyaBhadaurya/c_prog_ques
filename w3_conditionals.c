@@ -45,3 +45,31 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// 3. Write a C program to check whether a given number is positive or negative.
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    int a;
+    printf("Enter a number - ");
+    scanf("%d", &a);
+
+    if (a < 0)
+    {
+        printf("NEGATIVE");
+    }
+
+    else if (a > 0)
+    {
+        printf("POSITIVE");
+    }
+
+    else
+    {
+        printf("number is 0");
+    }
+
+    return 0;
+}
