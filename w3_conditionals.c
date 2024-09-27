@@ -9,6 +9,7 @@ int main(int argc, char const *argv[])
     int a, b;
     printf("Enter 2 numbers - ");
     scanf("%d %d", &a, &b);
+    
     if (a == b)
     {
         printf("Equal");
@@ -17,6 +18,29 @@ int main(int argc, char const *argv[])
     else
     {
         printf("Not equal");
+    }
+
+    return 0;
+}
+
+// 2. Write a C program to check whether a given number is even or odd.
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    int a;
+    printf("Enter a number");
+    scanf("%d", &a);
+    
+    if (a % 2 == 0)
+    {
+        printf("Number is even");
+    }
+        
+    else
+    {
+        printf("Odd");
     }
 
     return 0;
