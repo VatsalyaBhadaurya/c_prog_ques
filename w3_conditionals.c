@@ -96,3 +96,28 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// 5. Write a C program to read the age of a candidate and determine whether he is eligible to cast his/her own vote.
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+
+    int a;
+    printf("Enter yoUR DOB - ");
+    scanf("%d", &a);
+
+    if (a <= 2006)
+    {
+        printf("You are eligible for vote");
+    }
+
+    else
+    {
+        printf("Sorry you are not eligible");
+    }
+
+    return 0;
+}
+
