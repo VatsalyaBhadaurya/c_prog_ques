@@ -419,3 +419,54 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+/*19. Write a program in C to calculate and print the electricity bill of a given customer.
+The customer ID, name, and unit consumed by the user should be captured from the keyboard to display the total amount to be paid to the customer.
+
+The charge are as follow :
+
+Unit	                          Charge/unit
+upto 199	                        @1.20
+200 and above but less than 400	    @1.50
+400 and above but less than 600	    @1.80
+600 and above	                    @2.00
+If bill exceeds Rs. 400 then a surcharge of 15% will be charged */
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    int a;
+    char b[25];
+    float c, s;
+
+    printf("Enter customer Id, name, unit consumed - ");
+    scanf("%d %s %f", &a, &b, &c);
+
+    if (a >= 400)
+    {
+        s = (0.15 * s) + s;
+    }
+
+    if (c <= 199)
+    {
+        printf("Your bill - %f", c * 1.2);
+    }
+
+    else if (c >= 200 && c < 400)
+    {
+        printf("Your bill - %f", c * 1.5);
+    }
+
+    else if (c >= 400 && c < 600)
+    {
+        printf("Your bill - %f", c * 1.8 + ((0.15 * s) + s));
+    }
+
+    else
+    {
+        printf("Your bill - %f", c * 2.0 + ((0.15 * s) + s));
+    }
+
+    return 0;
+}
