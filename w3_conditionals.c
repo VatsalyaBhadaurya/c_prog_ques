@@ -168,3 +168,35 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// 8. Write a C program to find the largest of three numbers.
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int a, b, c;
+    printf("Enter 3 numbers - ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a > b && a > c)
+    {
+        printf("%d is largest ", a);
+    }
+
+    else if (b > a && b > c)
+    {
+        printf("%d is largest ", b);
+    }
+
+    else if (c > a && c > b)
+    {
+        printf("%d is largest ", c);
+    }
+
+    else
+    {
+        printf("All are equal");
+    }
+
+    return 0;
+}
