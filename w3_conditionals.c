@@ -354,3 +354,35 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// 14. Write a C program to check whether a triangle is Equilateral, Isosceles or Scalene.
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    float a, b, c;
+    printf("Enter sides of tri - ");
+    scanf("%s %s %s", &a, &b, &c);
+    if (a == b && b == c)
+    {
+        printf("Equilateral");
+    }
+
+    else if (a != b || b != c)
+    {
+        printf("Isosceles");
+    }
+
+    else
+    {
+        printf("Scalene");
+    }
+
+    /*if (b != a && a != c)
+    {
+        printf("Scalene");
+    }*/
+
+    return 0;
+}
