@@ -237,3 +237,31 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// Write a C program to determine eligibility for admission to a professional course based on the following criteria:
+// Eligibility Criteria : Marks in Maths >=65 and Marks in Phy >=55 and Marks in Chem>=50
+// and Total in all three subject >=190 or Total in Maths and Physics >=140
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    int a, b, c, d, e;
+    printf("Enter marks in M P C resp - ");
+    scanf("%d %d %d", &a, &b, &c);
+    d = a + b + c;
+    e = a + b;
+
+    if (a >= 56 && b >= 55 && c >= 50 && d >= 190 && e >= 140)
+    {
+
+        printf("Eligible for admission");
+    }
+
+    else
+    {
+        printf("Not eligible");
+    }
+
+    return 0;
+}
