@@ -386,3 +386,36 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// 18. Write a C program to calculate profit and loss on a transaction.
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    float cp, sp;
+    float p;
+    printf("Cost price - ");
+    scanf("%f", &cp);
+    printf("Selling price - ");
+    scanf("%f", &sp);
+
+    p = sp - cp;
+
+    if (p > 0)
+    {
+        printf("Profit of %f", p);
+    }
+
+    else if (p < 0)
+    {
+        printf("Loss of %f", p);
+    }
+
+    else
+    {
+        printf("Break Even");
+    }
+
+    return 0;
+}
