@@ -200,3 +200,40 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// 9. Write a C program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies.
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    int a, b;
+    printf("Enter coordinates - ");
+    scanf("%d\n %d", &a, &b);
+    if (a > 0 && b > 0)
+    {
+        printf("1st quardrant");
+    }
+
+    else if (a < 0 && b > 0)
+    {
+        printf("2nd quardrant");
+    }
+
+    else if (a < 0 && b < 0)
+    {
+        printf("3rd quardrant");
+    }
+
+    else if (a > 0 && b < 0)
+    {
+        printf("4th quardrant");
+    }
+
+    else
+    {
+        printf("Origin coordinate");
+    }
+
+    return 0;
+}
