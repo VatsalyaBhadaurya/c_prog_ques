@@ -265,3 +265,43 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+//12. Write a C program to read the roll no, name and marks of three subjects and calculate the total, percentage and division.
+
+#include <stdio.h>
+
+int main()
+{
+    int r, m1, m2, m3, t, p;
+    char name[50]; 
+
+    printf("Enter Roll No, Name, Marks in 3 subjects: ");
+    scanf("%d %s %d %d %d", &r, name, &m1, &m2, &m3);
+
+    t = m1 + m2 + m3;
+    p = (t * 100) / 300; 
+
+    printf("Roll No: %d\n", r);
+    printf("Name: %s\n", name);
+    printf("Total Marks: %d\n", t);
+    printf("Percentage: %d%%\n", p);
+
+    if (p >= 80)
+    {
+        printf("First Division\n");
+    }
+    else if (p >= 60)
+    {
+        printf("Second Division\n");
+    }
+    else if (p >= 40)
+    {
+        printf("Third Division\n");
+    }
+    else
+    {
+        printf("Fail\n");
+    }
+
+    return 0;
+}
