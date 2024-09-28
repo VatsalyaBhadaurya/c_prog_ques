@@ -147,3 +147,24 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// 7. Write a C program to accept the height of a person in centimeters and categorize the person according to their height.
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    int h;
+    printf("Enter height in cm - ");
+    scanf("%d", &h);
+    if (h < 150)
+    {
+        printf("YoU are dwarf");
+    }
+    else
+    {
+        printf("Height is fine");
+    }
+
+    return 0;
+}
