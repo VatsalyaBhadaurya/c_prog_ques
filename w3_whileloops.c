@@ -48,3 +48,20 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// 3. Write a C program that calculates the product of numbers from 1 to 5 using a while loop.
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    int n = 1, p = 1;
+    while (n <= 5)
+    {
+        p = p * n;
+        printf("Current number: %d\n", p);
+        n++;
+    }
+
+    return 0;
+}
