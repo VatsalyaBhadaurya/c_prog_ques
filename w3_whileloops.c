@@ -19,3 +19,32 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// 2. Write a C program that prompts the user to input a series of integers until the user stops entering 0 using a while loop.
+// Calculate and print the sum of all the positive integers entered.
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    int a, s = 0;
+
+    while (1)
+    {
+        printf("Enter a number - ");
+        scanf("%d", &a);
+        if (a == 0)
+        {
+            break;
+        }
+
+        if (a > 0)
+        {
+            s = a + s;
+        }
+    }
+
+    printf("Sum of positive integers: %d\n", s);
+
+    return 0;
+}
